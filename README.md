@@ -1,0 +1,17 @@
+Branch: `avium-16.2`
+
+Personal branch: `avium-16.2-personal-build`
+
+Instructions:
+
+- Vanilla LineageOS: [Build for lemonades | LineageOS Wiki](https://wiki.lineageos.org/devices/lemonades/build/)
+  
+  - Configure your Ubuntu 24.04 environment according to this guide. Additionally install `erofs-utils` if needed to extract firmware from flashable zip.
+
+- AviumUI：[AviumUI/android_manifests](https://github.com/AviumUI/android_manifests/blob/avium-16.2/README.mkdn)
+  
+  - Run the `repo init`, `repo sync` and `lunch`/`brunch` step according to this guide instead of Vanilla LineageOS guide)
+  
+  - Avoid using excessive number of jobs. During `repo init`, use no more than 8 to prevent 429 error. During `m bacon`, use no more than 18 on 64GB RAM to prevent OOM.
+
+- Proprietary firmware could be extracted from either [Vanilla LineageOS builds](https://download.lineageos.org/devices/lemonades) or builds provided by [Neokoni's OTA Center](https://ota.neokoni.ink/device/lemonades/AviumUI/avium-16).
