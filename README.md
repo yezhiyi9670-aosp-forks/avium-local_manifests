@@ -2,7 +2,9 @@ Branch: `avium-16.2`
 
 Personal branch: `avium-16.2-personal-build`
 
-Instructions:
+To build the personal fork, drop `roomservice.xml` into `.repo/local_manifests` before doing `repo sync`.
+
+Resources that you may need for building:
 
 - Vanilla LineageOS: [Build for lemonades | LineageOS Wiki](https://wiki.lineageos.org/devices/lemonades/build/)
   
