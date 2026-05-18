@@ -5,6 +5,7 @@ Known working sync date:
 - `2026-05-16 16:48:12+00:00`
 - `2026-05-17 07:40:04+00:00`
 - `2026-05-18 04:58:08+00:00`
+- `2026-05-18 12:20:03+00:00`
 
 To build the personal fork, drop `roomservice.xml` into `.repo/local_manifests` before doing `repo sync`.
 
@@ -20,4 +21,4 @@ Resources that you may need for building:
   
   - Avoid using excessive number of jobs. During `repo init`, use no more than 8 to prevent 429 error. During `m bacon`, use no more than 18 on 64GB RAM to prevent OOM.
 
-- Proprietary firmware could be extracted from either [Vanilla LineageOS builds](https://download.lineageos.org/devices/lemonades) or builds provided by [Neokoni's OTA Center](https://ota.neokoni.ink/device/lemonades/AviumUI/avium-16).
+- Proprietary firmware could be extracted from builds provided by [Neokoni's OTA Center](https://ota.neokoni.ink/device/lemonades/AviumUI/avium-16), or possibly [Vanilla LineageOS builds](https://download.lineageos.org/devices/lemonades).
