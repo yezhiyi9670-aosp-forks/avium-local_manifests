@@ -5,6 +5,7 @@ Known working sync date:
 - `2026-05-18 12:20:03+00:00`
 - `2026-05-22 15:48:52+00:00`
 - `2026-06-03 14:40:14+00:00`
+- `2026-06-06 11:29:44+00:00`
 
 To build the personal fork, drop `roomservice.xml` into `.repo/local_manifests` before doing `repo sync`.
 
