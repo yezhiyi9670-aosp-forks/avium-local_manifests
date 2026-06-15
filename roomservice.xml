@@ -15,5 +15,8 @@
   <remove-project name="android_vendor_lineage" />
   <project path="vendor/lineage" remote="avium-personal-build" name="yezhiyi9670/avium-android_vendor_lineage" />
 
+  <remove-project name="android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" remote="avium-personal-build" name="yezhiyi9670/avium-android_packages_apps_Settings" />
+
   <project path="vendor/lineage-priv/keys" remote="avium-keys" name="yezhiyi9670/avium-android_vendor_lineage-priv_keys-template" />
 </manifest>
