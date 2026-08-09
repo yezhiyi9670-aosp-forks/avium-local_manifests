@@ -14,7 +14,7 @@ This is the local manifest for my [AviumUI](https://aviumui.org/) for [OnePlus 9
 
 | Version         | Upstream sync date          | Manifest                                               | Snapshot                                               |
 | --------------- | --------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
-| 16.2.1-20260807 | `2026-08-07 06:49:20+00:00` | [20260715](./local_manifests/roomservice-20260715.xml) | [20260807](./snapshot_manifests/snapshot-20260807.xml) |
+| 16.2.1-20260809 | `2026-08-09 01:25:58+00:00` | [20260715](./local_manifests/roomservice-20260715.xml) | [20260809](./snapshot_manifests/snapshot-20260809.xml) |
 
 Snapshots are manifest files that are created with command `repo manifest -r -o snapshot.xml`. They could possibly be used to reproduce\* a certain historical build (see below), as long as the commits referenced by them are properly preserved.
 
