@@ -25,6 +25,11 @@ Make:
 m bacon
 ```
 
+Make and flash now:
+```bash
+m bacon && ( adb reboot sideload-auto-reboot; adb wait-for-sideload && adb sideload out/target/product/lemonades/lineage_lemonades-ota.zip )
+```
+
 Make snapshot manifest:
 ```bash
 repo manifest -r -o snapshot.xml

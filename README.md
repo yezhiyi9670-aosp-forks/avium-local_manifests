@@ -8,13 +8,13 @@ This is the local manifest for my [AviumUI](https://aviumui.org/) for [OnePlus 9
 
 - Upstream manifest branch: `avium-16.2`
 - Personally forked projects branch: `avium-16.2-pb`
-- Local manifest: [roomservice.xml](./local_manifests/roomservice-20260715.xml)
+- Local manifest: [roomservice.xml](./local_manifests/roomservice-20260816.xml)
 
 ## Published builds info
 
 | Version         | Upstream sync date          | Manifest                                               | Snapshot                                               |
 | --------------- | --------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
-| 16.2.1-20260809 | `2026-08-09 01:25:58+00:00` | [20260715](./local_manifests/roomservice-20260715.xml) | [20260809](./snapshot_manifests/snapshot-20260809.xml) |
+| 16.2.1-20260817 | `2026-08-17 15:21:04+00:00` | [20260816](./local_manifests/roomservice-20260816.xml) | [20260817](./snapshot_manifests/snapshot-20260817.xml) |
 
 Snapshots are manifest files that are created with command `repo manifest -r -o snapshot.xml`. They could possibly be used to reproduce\* a certain historical build (see below), as long as the commits referenced by them are properly preserved.
 
@@ -62,4 +62,4 @@ Trying to reproduce these older builds is considered not very feasible since the
    - You may not want to use `-j$(nproc --all)`. Overly high job count may lag other applications or cause OOM.
 
 8. Locate build outputs and flash according to LineageOS build guide and [flashing guide](https://wiki.lineageos.org/devices/lemonades/install/).
-   - Quick upgrading sequence once installed: `adb reboot sideload-auto-reboot; adb wait-for-sideload && adb sideload <zip_filename>`.
+   - Quick upgrading sequence once installed: `adb reboot sideload-auto-reboot; adb wait-for-sideload && adb sideload lineage_lemonades-ota.zip`.
