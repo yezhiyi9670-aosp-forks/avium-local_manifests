@@ -1,0 +1,31 @@
+{
+  "failOpen": false,
+  "disabled": false,
+  "filesystem": {
+    "denyRead": [
+      "~/.ssh",
+      "~/.local",
+      "~/.gnupg",
+      "~/.aws/credentials",
+      "~/.azure",
+      "~/.config/gcloud",
+      "~/.config/gh",
+      "~/.kube",
+      "~/.docker/config.json",
+      "~/.npmrc",
+      "~/.netrc",
+      "~/.env",
+      ".env",
+      ".secret",
+      ".secrets",
+      "/mnt"
+    ],
+    "allowRead": [
+      "~/.ssh/id_ed25519.pub",
+      "/mnt/wsl/lineage_build"
+    ],
+    "denyWrite": [
+      ".git"
+    ]
+  }
+}
