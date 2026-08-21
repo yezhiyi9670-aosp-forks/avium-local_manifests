@@ -22,7 +22,8 @@
     ],
     "allowRead": [
       "~/.ssh/id_ed25519.pub",
-      "/mnt/wsl/lineage_build"
+      "/mnt/wsl/lineage_build/avium/.repo/projects",
+      "/mnt/wsl/lineage_build/avium/.repo/project-objects"
     ],
     "denyWrite": [
       ".git"

@@ -16,7 +16,7 @@ MAGISK_FILE=addons/Magisk-v30.7.apk
 echo "Magisk file: $MAGISK_FILE"
 
 echo "FOR UPDATING ONLY. NEVER USE FOR FIRST CUSTOM ROM INSTALL."
-echo "ALSO DO NOT TRY IF YOU DO NOT FULLY UNDERSTANT CONTENTS OF THIS FILE."
+echo "ALSO DO NOT TRY IF YOU DO NOT FULLY UNDERSTANT CONTENTS OF THIS SCRIPT."
 read -p "Press any key to start or Ctrl+C to abort..." -n1 -s
 echo ""
 
@@ -25,10 +25,11 @@ echo "Reboot to bootloader manually if your device does not do this automaticall
 adb reboot bootloader || true
 fastboot flash vbmeta vbmeta.img
 fastboot flash dtbo dtbo.img
-fastboot flash boot boot.img
+fastboot flash recovery recovery.img
 fastboot reboot recovery
 
 echo "======== Sideload OTA ========"
+echo "Now choose to Apply Update from ADB Sideloading."
 adb wait-for-sideload
 echo "Please manually REBOOT to recovery and enter Sideload again when OTA is finished."
 adb sideload "$1"
