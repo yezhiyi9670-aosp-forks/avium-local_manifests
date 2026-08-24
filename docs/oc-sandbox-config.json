@@ -26,6 +26,7 @@
       "/mnt/wsl/lineage_build/avium/.repo/project-objects"
     ],
     "denyWrite": [
+      ".repo",
       ".git"
     ]
   }

@@ -54,3 +54,8 @@ Extract blobs 7z:
 ```bash
 7z x blobs-20260720.7z -o"out/blob_dump"
 ```
+
+OpenCode sandbox launch:
+```bash
+OPENCODE_SANDBOX_CONFIG="$(cat oc-sandbox-config.json)" opencode -c
+```
