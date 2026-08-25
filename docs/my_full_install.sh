@@ -22,7 +22,7 @@ echo ""
 
 echo "======== Flash recovery ========"
 echo "Reboot to bootloader manually if your device does not do this automatically."
-adb reboot bootloader || true
+adb -d reboot bootloader || true
 fastboot flash vbmeta vbmeta.img
 fastboot flash dtbo dtbo.img
 fastboot flash recovery recovery.img
@@ -30,21 +30,21 @@ fastboot reboot recovery
 
 echo "======== Sideload OTA ========"
 echo "Now choose to Apply Update from ADB Sideloading."
-adb wait-for-sideload
+adb -d wait-for-sideload
 echo "Please manually REBOOT to recovery and enter Sideload again when OTA is finished."
-adb sideload "$1"
+adb -d sideload "$1"
 sleep 5
 
 echo "======== Sideload MicroG ========"
-adb wait-for-sideload
+adb -d wait-for-sideload
 echo "Please manually enter Sideload again when installation is finished."
-adb sideload "$MICROG_FILE"
+adb -d sideload "$MICROG_FILE"
 sleep 5
 
 echo "======== Sideload Magisk ========"
-adb wait-for-sideload
+adb -d wait-for-sideload
 echo "Please manually reboot to system again when installation is finished."
-adb sideload "$MAGISK_FILE"
+adb -d sideload "$MAGISK_FILE"
 sleep 5
 
 echo "======== Done ========"

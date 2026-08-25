@@ -27,7 +27,8 @@
     ],
     "denyWrite": [
       ".repo",
-      ".git"
+      ".git",
+      "oc-sandbox-config.json"
     ]
   }
 }
