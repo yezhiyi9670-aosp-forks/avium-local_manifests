@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # DO NOT TRY IF YOU DO NOT FULLY UNDERSTANT CONTENTS OF THIS FILE
 
 set -e
