@@ -12,11 +12,11 @@ else
 fi
 MICROG_FILE=addons/microG-Installer-20260517-121824-FDD-v0.3.15.zip
 echo "MicroG file: $MICROG_FILE"
-MAGISK_FILE=addons/Magisk-v30.7.apk
-echo "Magisk file: $MAGISK_FILE"
+ROOTING_FILE=addons/FolkPatch_115032_5.0_on_main-release.apk
+echo "Rooting file: $ROOTING_FILE"
 
 echo "FOR UPDATING ONLY. NEVER USE FOR FIRST CUSTOM ROM INSTALL."
-echo "ALSO DO NOT TRY IF YOU DO NOT FULLY UNDERSTANT CONTENTS OF THIS SCRIPT."
+echo "ALSO DO NOT TRY IF YOU DO NOT FULLY UNDERSTAND CONTENTS OF THIS SCRIPT."
 read -p "Press any key to start or Ctrl+C to abort..." -n1 -s
 echo ""
 
@@ -41,10 +41,10 @@ echo "Please manually enter Sideload again when installation is finished."
 adb -d sideload "$MICROG_FILE"
 sleep 5
 
-echo "======== Sideload Magisk ========"
+echo "======== Sideload Rooting ========"
 adb -d wait-for-sideload
 echo "Please manually reboot to system again when installation is finished."
-adb -d sideload "$MAGISK_FILE"
+adb -d sideload "$ROOTING_FILE"
 sleep 5
 
 echo "======== Done ========"
