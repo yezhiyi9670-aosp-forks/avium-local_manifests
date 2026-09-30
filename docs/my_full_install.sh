@@ -12,10 +12,10 @@ else
 fi
 MICROG_FILE=addons/microG-Installer-20260822-122605-FDD-v0.3.16.zip
 echo "MicroG file: $MICROG_FILE"
-# ROOTING_FILE=addons/FolkPatch_115032_5.0_on_main-release.apk
-# echo "Rooting file: $ROOTING_FILE"
-ROOTING_BOOTIMG=addons/folk_patched_115032_0.13.8_wdto.img
-echo "Rooting boot image: $ROOTING_BOOTIMG"
+ROOTING_FILE=addons/FolkPatch_115051_680a6028_on_main-release.apk
+echo "Rooting file: $ROOTING_FILE"
+# ROOTING_BOOTIMG=addons/folk_patched_115032_0.13.8_wdto.img
+# echo "Rooting boot image: $ROOTING_BOOTIMG"
 
 echo "FOR UPDATING ONLY. NEVER USE FOR FIRST CUSTOM ROM INSTALL."
 echo "ALSO DO NOT TRY IF YOU DO NOT FULLY UNDERSTAND CONTENTS OF THIS SCRIPT."
@@ -25,6 +25,7 @@ echo ""
 echo "======== Flash recovery ========"
 echo "Reboot to bootloader manually if your device does not do this automatically."
 adb -d reboot bootloader || true
+fastboot flash boot boot.img
 fastboot flash vbmeta vbmeta.img
 fastboot flash dtbo dtbo.img
 fastboot flash recovery recovery.img
@@ -39,20 +40,21 @@ sleep 5
 
 echo "======== Sideload MicroG ========"
 adb -d wait-for-sideload
-echo "Please manually enter reboot to BOOTLOADER after finished."
+echo "Please manually re-enter SIDELOAD when finished."
+# echo "Please manually enter reboot to BOOTLOADER after finished."
 adb -d sideload "$MICROG_FILE"
 sleep 5
 
-# echo "======== Sideload Rooting ========"
-# adb -d wait-for-sideload
-# echo "Please manually reboot to system again when installation is finished."
-# adb -d sideload "$ROOTING_FILE"
-# sleep 5
+echo "======== Sideload Rooting ========"
+adb -d wait-for-sideload
+echo "Please manually reboot to system again when installation is finished."
+adb -d sideload "$ROOTING_FILE"
+sleep 5
 
-echo "======== Boot Rooting Image ========"
-fastboot boot "$ROOTING_BOOTIMG"
-echo "fastboot boot command done."
-echo "REMEMBER TO RE-PERFORM DIRECT INSTALL IN ROOT MANAGER."
+# echo "======== Boot Rooting Image ========"
+# fastboot boot "$ROOTING_BOOTIMG"
+# echo "fastboot boot command done."
+# echo "REMEMBER TO RE-PERFORM DIRECT INSTALL IN ROOT MANAGER."
 
 echo "======== Done ========"
 # echo "Please manually reboot to system."
