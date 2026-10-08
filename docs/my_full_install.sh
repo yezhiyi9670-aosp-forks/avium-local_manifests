@@ -12,7 +12,7 @@ else
 fi
 MICROG_FILE=addons/microG-Installer-20260822-122605-FDD-v0.3.16.zip
 echo "MicroG file: $MICROG_FILE"
-ROOTING_FILE=addons/FolkPatch_115051_680a6028_on_main-release.apk
+ROOTING_FILE=addons/FolkPatch_115356_2aeabd04_on_main-release.apk
 echo "Rooting file: $ROOTING_FILE"
 # ROOTING_BOOTIMG=addons/folk_patched_115032_0.13.8_wdto.img
 # echo "Rooting boot image: $ROOTING_BOOTIMG"
