@@ -14,6 +14,7 @@ This is the local manifest for my [AviumUI](https://aviumui.org/) for [OnePlus 9
 
 | Version         | Upstream sync date          | Manifest                                               | Snapshot                                               |
 | --------------- | --------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
+| 16.2.1-20261020 | `2026-10-20 11:43:01+00:00` | [20261013](./local_manifests/roomservice-20261013.xml) | [20261020](./snapshot_manifests/snapshot-20261020.xml) |
 | 16.2.1-20261008 | `2026-10-08 07:08:39+00:00` | [20260930](./local_manifests/roomservice-20260930.xml) | [20261008](./snapshot_manifests/snapshot-20261008.xml) |
 | 16.2.1-20260825 | `2026-08-25 14:36:11+00:00` | [20260816](./local_manifests/roomservice-20260816.xml) | [20260825](./snapshot_manifests/snapshot-20260825.xml) |
 
